@@ -1,4 +1,7 @@
+const app = express();
 const express = require("express");
+const port = process.env.PORT || 4000;
+
 const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const multer = require("multer");
@@ -11,8 +14,6 @@ app.use(express.json());
 app.use(cors());
 
 const uri = process.env.MONGODB_URI;
-const app = express();
-const port = process.env.PORT || 4000;
 
 const connectOptions = {
   useNewUrlParser: true,
