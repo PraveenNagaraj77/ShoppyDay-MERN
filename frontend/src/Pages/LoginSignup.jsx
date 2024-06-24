@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./CSS/LoginSignup.css";
 
-const URL = 'http://localhost:4000';
+const URL = 'https://shoppyday-mern.onrender.com';
 
 const LoginSignup = () => {
   const [state, setState] = useState("Login");
