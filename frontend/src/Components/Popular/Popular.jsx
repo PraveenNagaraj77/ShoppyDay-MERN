@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Popular.css";
 import Item from "../Item/Item";
 
-const URL = "http://localhost:4000";
+const URL = "https://shoppyday-mern.onrender.com";
 
 const Popular = () => {
   const [popular, setPopular] = useState([]);
