@@ -1,7 +1,5 @@
 const app = express();
 const express = require("express");
-const port = process.env.PORT || 4000;
-
 const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const multer = require("multer");
