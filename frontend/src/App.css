@@ -1,0 +1,16 @@
+.div {
+  width: 80%; /* Using percentage for width */
+  max-width: 1200px; /* Using maximum width to limit size */
+  margin: auto; /* Centering the main div */
+  padding: 20px; /* Adding padding for better spacing */
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+}
+
+/* Media query for small screens */
+@media only screen and (max-width: 768px) {
+  .div {
+    width: 90%; /* Adjusting width for smaller screens */
+  }
+}
