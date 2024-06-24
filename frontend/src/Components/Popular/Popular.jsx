@@ -2,13 +2,12 @@ import React, { useEffect, useState } from 'react'
 import './Popular.css'
 import Item from '../Item/Item'
 
-const URL = 'http://localhost:4000';
 
 const Popular = () => {
   const[popular,setPopular]=useState([]);
 
   useEffect(()=>{
-    fetch(`http://localhost:4000/popularinwomen`)
+    fetch('http://localhost:4000/popularinwomen')
     .then((response)=>response.json())
     .then((data)=>setPopular(data))
   },[])
