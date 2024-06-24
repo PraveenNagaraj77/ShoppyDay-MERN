@@ -3,7 +3,7 @@ import React, { createContext, useEffect, useState } from "react";
 export const ShopContext = createContext(null);
 
 
-const URL = 'http://localhost:4000';
+const URL = 'https://shoppyday-mern.onrender.com';
 
 const getDefautCart = () => {
   let cart = {};
