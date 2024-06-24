@@ -1,6 +1,4 @@
-const port = 4000;
 const express = require("express");
-const app = express();
 const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const multer = require("multer");
@@ -13,6 +11,8 @@ app.use(express.json());
 app.use(cors());
 
 const uri = process.env.MONGODB_URI;
+const app = express();
+const port = process.env.PORT || 4000;
 
 const connectOptions = {
   useNewUrlParser: true,
@@ -26,7 +26,6 @@ mongoose
   .connect(uri, connectOptions)
   .then(() => {
     console.log("Connected to MongoDB Atlas");
-    
   })
   .catch((error) => {
     console.error("Error connecting to MongoDB Atlas:", error);
