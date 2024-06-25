@@ -29,7 +29,7 @@ const AddProduct = () => {
       let formData = new FormData();
       formData.append("product", image);
 
-      const uploadResponse = await fetch("http://localhost:4000/upload", {
+      const uploadResponse = await fetch("https://shoppyday-mern.onrender.com/upload", {
         method: "POST",
         body: formData,
       });
@@ -49,7 +49,7 @@ const AddProduct = () => {
       let product = { ...productDetails, image: uploadData.imageUrl }; // Assuming the server returns 'imageUrl'
 
       const addProductResponse = await fetch(
-        "http://localhost:4000/addproduct",
+        "https://shoppyday-mern.onrender.com/addproduct",
         {
           method: "POST",
           headers: {
